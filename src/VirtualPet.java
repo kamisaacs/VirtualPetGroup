@@ -5,15 +5,20 @@ public class VirtualPet {
     private int boredom;
     private int hunger;
     private int thirst;
+    private int healthFactor;
+    private String type_of_pet;
     
 
 
-    public VirtualPet(String name, String description, int boredom, int hunger, int thirst) {
+    
+    public VirtualPet(String name, String description, int boredom, int hunger, int thirst , int healthFactor , String type_of_pet) {
         this.name = name;
         this.description = description;
         this.boredom = boredom;
         this.hunger = hunger;
         this.thirst = thirst;
+        this.healthFactor = healthFactor;
+        this.type_of_pet = type_of_pet;
     }
     public VirtualPet(String name, String description) {
         this.name = name;
@@ -57,13 +62,24 @@ public class VirtualPet {
     public void feed() {
         hunger = hunger - 30;
         thirst = thirst + 30;
+        healthFactor = healthFactor +10;
     }
     public void water() {
         thirst = thirst -  30;
+        healthFactor = healthFactor + 10;
     }
     public void play() {
         boredom = boredom - 30;
         hunger = hunger + 30;
         thirst =  thirst + 30;
+        healthFactor = healthFactor - 10;
     }
+    public String getType_of_pet() {
+        return type_of_pet;
+    }
+    public void setType_of_pet(String type_of_pet) {
+        this.type_of_pet = type_of_pet;
+    }
+
+    
 }
