@@ -6,6 +6,13 @@ public class VirtualPet {
     private int hunger;
     private int thirst;
     private int healthFactor;
+    public int getHealthFactor() {
+        return healthFactor;
+    }
+    public void setHealthFactor(int healthFactor) {
+        this.healthFactor = healthFactor;
+    }
+
     private String type_of_pet;
     
 
@@ -57,6 +64,7 @@ public class VirtualPet {
         hunger = hunger + 10;
         thirst = thirst + 10;
         boredom = boredom + 10;
+        healthFactor = healthFactor + 10;
     }
     public void feed() {
         hunger = hunger - 30;
@@ -100,4 +108,5 @@ public class VirtualPet {
     public void maintenancePet() {
         healthFactor = healthFactor +10;
     }
+    
 }
