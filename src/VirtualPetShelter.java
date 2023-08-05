@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 //package virtual_pet;
+>>>>>>> 383e6c396d81d176726b03cef2445181aa6a0faa
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +38,26 @@ public class VirtualPetShelter {
     public void tick() {
         for (VirtualPet pet : pets.values()) {
             pet.tick();
+        }
+    }
+    public void oilPet(){
+        for (VirtualPet pet : pets.values()){
+            pet.oilPet();
+        }
+    }
+    public void rechargePet(){
+        for (VirtualPet pet : pets.values()){
+            pet.rechargePet();
+        }
+    }
+    public void polishPet(){
+        for (VirtualPet pet : pets.values()){
+            pet.polishPet();
+        }
+    }
+    public void maintenancePet(){
+        for (VirtualPet pet : pets.values()){
+            pet.maintenancePet();
         }
     }
 }
