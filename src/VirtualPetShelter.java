@@ -1,4 +1,4 @@
-package virtual_pet;
+//package virtual_pet;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
