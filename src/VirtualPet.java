@@ -1,4 +1,4 @@
- 
+
 public class VirtualPet {
     private String name;
     private String description;
@@ -82,6 +82,22 @@ public class VirtualPet {
     public void setType_of_pet(String type_of_pet) {
         this.type_of_pet = type_of_pet;
     }
+
+    public void oilPet() {
+        healthFactor = healthFactor +10;
+
+    }
     
     
+    public void rechargePet() {
+        healthFactor = healthFactor +10;
+    }
+
+    public void polishPet() {
+        healthFactor = healthFactor +10;
+    }
+
+    public void maintenancePet() {
+        healthFactor = healthFactor +10;
+    }
 }
