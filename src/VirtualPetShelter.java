@@ -1,4 +1,3 @@
-package virtual_pet;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +33,16 @@ public class VirtualPetShelter {
     }
     public void tick() {
         for (VirtualPet pet : pets.values()) {
+            pet.tick();
+        }
+    }
+    public void oilPet(){
+        for (VirtualPet pet : pets.values()){
+            pet.oilPet();
+        }
+    }
+    public void cleanPet(){
+        for (VirtualPet pet : pets.values()){
             pet.tick();
         }
     }
